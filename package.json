@@ -1,7 +1,7 @@
 {
-  "name": "climate-change-backend",
+  "name": "co2-emissions-back",
   "version": "0.5.0",
-  "description": "A GraphQL server for country data",
+  "description": "CO2 data",
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
@@ -9,15 +9,17 @@
   },
   "keywords": [],
   "author": {
-    "name": "Hermanni Piirainen",
-    "email": "hermanni.piirainen@gmail.com"
+    "name": "Julius Kuorikoski",
+    "email": "julius.kuorikoski@gmail.com"
   },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/HPiirainen/climate-change-backend.git"
+    "type": "",
+    "url": ""
   },
   "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/node": "^7.2.2",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-watch": "^2.0.7"
