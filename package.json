@@ -1,0 +1,33 @@
+{
+  "name": "climate-change-backend",
+  "version": "0.5.0",
+  "description": "A GraphQL server for country data",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "babel-watch server.js"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Hermanni Piirainen",
+    "email": "hermanni.piirainen@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HPiirainen/climate-change-backend.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-watch": "^2.0.7"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "apollo-server-express": "^2.2.2",
+    "axios": "^0.18.0",
+    "express": "^4.16.4",
+    "graphql": "^14.0.2",
+    "graphql-tools": "^4.0.3"
+  }
+}
