@@ -1,15 +1,11 @@
 {
-  "name": "co2",
+  "name": "co2-emissions-back",
   "version": "0.5.0",
   "description": "CO2 data",
   "main": "index.js",
   "scripts": {
-    "dev": "babel-watch server.js",
-    "clean": "rm -rf build && mkdir build",
-    "server": "nodemon server.js --exec babel-node",
-    "build-babel": "babel -d ./build ./src -s",
-    "heroku-postbuild": "npm install",
-    "start": "babel-node server.js"
+    "start": "npm run dev",
+    "dev": "babel-watch server.js"
   },
   "keywords": [],
   "author": {
@@ -22,12 +18,9 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.3.3",
-    "@babel/node": "^7.2.2",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "babel-watch": "^2.0.7",
-    "nodemon": "1.11.0"
+    "babel-watch": "^2.0.7"
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
