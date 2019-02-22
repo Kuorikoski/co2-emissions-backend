@@ -4,8 +4,11 @@
   "description": "CO2 data",
   "main": "index.js",
   "scripts": {
-    "start": "npm run dev",
-    "dev": "babel-watch server.js"
+    "dev": "babel-watch server.js",
+	"clean": "rm -rf build && mkdir build",
+	"build-babel": "babel -d ./build ./src -s",
+	"build": "npm run clean && npm run build-babel",
+	"start": "npm run build && node ./build/server.js"
   },
   "keywords": [],
   "author": {
